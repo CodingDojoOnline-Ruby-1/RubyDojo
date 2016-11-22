@@ -5,7 +5,7 @@ class BankAccount
 		@checking_balance = 0
 		@saving_balance = 0
 		@interestrate = "1.5%"
-		@@bankaccountcount += 1
+		@@bankaccountcount += 1 # This was very important to understand.  The class variable @@ can be updated internally by the class but not by any instances. GREAT!
 	end
 	def balance(string)
 		#I set this variable
@@ -25,7 +25,7 @@ class BankAccount
 	def withdraw(string, num)
 		if string == "checking"
 			if @checking_balance > 0
-				@checking_balance -= num
+				@checking_balance -= num #What if you have $40 in checking, but you want to withdraw $50, are you going to allow that?
 			else puts "Insufficient Funds"
 			end
 		end
