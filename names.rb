@@ -8,3 +8,5 @@ names = [a, b, c, d, e]
 puts "You got " + names.count.to_s + " names in the 'names' array"
 
 names.each { |name| puts "The name is " + name.values.join(" ") }
+
+#This is pretty clean Nathaniel.  Pretty nice how Ruby can do a lot of one-liners.  - Todd
