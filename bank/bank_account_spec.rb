@@ -48,3 +48,4 @@ RSpec.describe BankAccount do
 		end
 	end
 end
+#I like how you split up behavior and attributes!
