@@ -5,7 +5,7 @@ class MathDojo
 		@number = 0
 	end
 	def add(*num)
-		@number += num.flatten.inject(:+)
+		@number += num.flatten.inject(:+) #That's pretty sweet.  This is the second time I've seen an flatten.inject() used.  
 		self
 	end
 	def subtract(*num)
