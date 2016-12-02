@@ -1,0 +1,22 @@
+<% content_for :left do %>
+<div id="show">
+	<div class="row">
+		<div class="col-xs-8 col-sm-4 bold">First Name:</div>
+		<div class="col-xs-8 col-sm-8 user"><%= @user.first_name %></div>
+	</div>
+	<div class="row">
+		<div class="col-xs-8 col-sm-4 bold">Last Name:</div>
+		<div class="col-xs-8 col-sm-8 user"><%= @user.last_name %></div>
+	</div>
+	<div class="row">
+		<div class="col-xs-8 col-sm-4 bold">Email Address:</div>
+		<div class="col-xs-8 col-sm-8 user"><%= @user.email_address %></div>
+	</div>
+	<div class="links">
+		<a href="/users/<%= @user.id %>/edit">Edit</a> | <a href="/users">Back</a>
+	</div>
+</div>
+<% end %>
+<% content_for :right do %>
+<p>(This is the right side)</p>
+<% end %>
